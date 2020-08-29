@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto&display=swap');
+* {
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+/* NAV BAR */
+#nav-bar {
+	position: fixed;
+	z-index: 99;
+	padding: 10px;
+	width: 100%;
+	background-color: transparent;
+	transition: all 0.5s;
+	animation: fadeIn 2s ease;
+}
+#nav-bar ul {
+	display: flex;
+	justify-content: center;
+}
+#nav-bar li {
+	list-style: none;
+	padding: 0 20px;
+}
+#nav-bar li a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #9B9A97;
+}
+#nav-bar li a:hover {
+	color: #2F2D29;
+	border-bottom: 2px solid #2F2D29;
+}
+/* HOME SECTION */
+#home {
+	background-color: #EAE9E8;
+	width: 100%;
+	height: 100vh;
+	background-image: url("images/bg-header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: fadeIn 2s ease-in;
+}
+#profile-1, #header, #p-header, .scroll, .arrow{
+	position: absolute;
+	left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%,-50%);
+}
+#profile-1{
+	top: 35%;
+}
+#header {
+	color: #2F2D29;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	top: 50%;
+}
+#p-header {
+	color: #56534C;
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+	top: 63%;
+}
+#scroll-container{
+	display: block;
+}
+.scroll{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color: #605D57;
+	top: 85%;
+	animation: fadePop 2s infinite;
+}
+.arrow{
+	top: 95%;
+	animation: fadeDown 2s infinite;
+}
+@keyframes fadeIn{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadePop{
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@keyframes fadeDown{
+	0% { opacity: 0;top: 93%; }
+	50% { opacity: 1;top: 95%; }
+	100% { opacity: 0;top: 93%; }
+}
+/* ABOUT SECTION */
+#about{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	width: 100%;
+	margin: 100px auto;
+}
+.container{
+	width: 70%;
+	margin: 100px auto;
+}
+.profile, .art, .explorer{
+	margin-bottom: 50vh;
+}
+.profile-info, .info{
+	line-height: 2;
+	width: 50%;
+	margin: 10px auto;
+}
+/* CONTACT */
+#contact{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background-image: url("images/bg-footer.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.quote{
+	width: 50%;
+	font-weight: 400;
+	margin: 0 auto;
+	line-height: 2;
+}
+.social{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+.info-social{
+	width: 50%;
+	text-align: left;
+}
+.icons a{
+	padding: 0 10px;
+}
