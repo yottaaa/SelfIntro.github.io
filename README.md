@@ -1,6 +1,6 @@
 ## This is my self introduction
 
-[This is the link](https://yottaaa.github.io/introduction/)
+[Click this link](https://yottaaa.github.io/introduction/)
 
 ```Python
 if available:
